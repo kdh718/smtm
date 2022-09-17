@@ -10,7 +10,8 @@ class TddExerciseTests(unittest.TestCase):
 
     def tearDown(self):
         pass
-
+    
+    @patch("requests.get")
     def test_set_period_update_period_correctly(self):
         ex = TddExercise()
         # check default value
